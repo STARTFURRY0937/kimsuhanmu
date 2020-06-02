@@ -32,14 +32,25 @@ async def on_message(message):
         await message.channel.send(embed=embed)
         
     if message.content.startswith("-김수한무 네르"):
-        embed=discord.Embed(title="네르유튜브", description="이것은 네르의 프로필 입니다.", color=0x00ff56)
+        embed=discord.Embed(title=".뉄", description="이것은 넬.의 프로필 입니다.", color=0x00ff56)
         embed.set_author(name="네르", url="https://www.youtube.com/channel/UCf8xaoq1X55ZGnJn7kKtHwA", icon_url="https://cdn.discordapp.com/attachments/692941163920883732/717282429538140211/JPEG_20200103_190316.jpg")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/717016146716655677/717218639417442385/94ff9a0cbc761033.png")
         embed.add_field(name="이름", value="네르", inline=True)
         embed.add_field(name="주로 하는 말", value="ppap", inline=True)
         embed.add_field(name="좋아하는 게임", value="테라리아", inline=True)
         embed.add_field(name="한마디.", value="?", inline=True)
-        embed.set_footer(text="이 사람은 네르 입니다.")
+        embed.set_footer(text="이 사람은 넬. 입니다.")
+        await message.channel.send(embed=embed)
+        
+    if message.content.startswith("-김수한무 개미"):
+        embed=discord.Embed(title="개미작은", description="이것은 하양의 프로필 입니다.", color=0x00ff56)
+        embed.set_author(name="개미", url="https://www.youtube.com/channel/UCFQtQICxAe5poesv_UmCEVA?app=desktop", icon_url="https://cdn.discordapp.com/attachments/716541654848503890/717286397840719882/externalFile_1.jpg")
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/717016146716655677/717218639417442385/94ff9a0cbc761033.png")
+        embed.add_field(name="이름", value="개미", inline=True)
+        embed.add_field(name="주로 하는 말", value="ㅖㅣ!", inline=True)
+        embed.add_field(name="좋아하는 게임", value="현:퉤롸뤼아", inline=True)
+        embed.add_field(name="한마디.", value="ㅔ...", inline=True)
+        embed.set_footer(text="이 사람은 하양 입니다.")
         await message.channel.send(embed=embed)
         
     if message.content.startswith("ㅋㅋㅋ"):
