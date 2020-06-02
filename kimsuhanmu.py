@@ -86,6 +86,28 @@ async def on_message(message):
         embed.set_footer(text="이 사람은 약1한디아 입니다.")
         await message.channel.send(embed=embed)
         
+    if message.content.startswith("-김수한무 함수"):
+        embed=discord.Embed(title="함수", description="이것은 함수의 프로필 입니다.", color=0x00ff56)
+        embed.set_author(name="함수", url="https://www.youtube.com/channel/UCg3rWdTfpRlw_ZqcUuCOW2g/featured?view_as=subscriber", icon_url="https://cdn.discordapp.com/attachments/716541654848503890/717335317828599888/KakaoTalk_20200401_204511495_01.jpg")
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/717016146716655677/717218639417442385/94ff9a0cbc761033.png")
+        embed.add_field(name="이름", value="함수", inline=True)
+        embed.add_field(name="주로 하는 말", value="?", inline=True)
+        embed.add_field(name="좋아하는 게임", value="테라리아", inline=True)
+        embed.add_field(name="한마디.", value="약 필요하면 말하셈", inline=True)
+        embed.set_footer(text="이 사람은 함수 입니다.")
+        await message.channel.send(embed=embed)
+        
+    if message.content.startswith("-김수한무 ??"):
+        embed=discord.Embed(title="??", description="이것은 ??의 프로필 입니다.", color=0x00ff56)
+        embed.set_author(name="??", url="https://www.youtube.com/channel/UCjA53F_BR6Y8WRdE_Foh9rw?view_as=subscriber", icon_url="https://cdn.discordapp.com/attachments/716541654848503890/717335317828599888/KakaoTalk_20200401_204511495_01.jpg")
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/717016146716655677/717218639417442385/94ff9a0cbc761033.png")
+        embed.add_field(name="이름", value="??", inline=True)
+        embed.add_field(name="주로 하는 말", value="?", inline=True)
+        embed.add_field(name="좋아하는 게임", value="텔", inline=True)
+        embed.add_field(name="한마디.", value="함변수태", inline=True)
+        embed.set_footer(text="이 사람은 ?? 입니다.")
+        await message.channel.send(embed=embed)
+        
        
     if message.content.startswith("ㅋㅋㅋ"):
         await message.channel.send("하하하하하 :)")
