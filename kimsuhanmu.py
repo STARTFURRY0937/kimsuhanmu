@@ -89,7 +89,7 @@ async def on_message(message):
         embed.add_field(name="이름", value="함수", inline=True)
         embed.add_field(name="주로 하는 말", value="?", inline=True)
         embed.add_field(name="좋아하는 게임", value="컴은 테라리아만 하는 함수", inline=True)
-        embed.add_field(name="한마디.", value="약 필요하면 말하셈", inline=True)
+        embed.add_field(name="한마디.", value="쇼밤", inline=True)
         embed.set_footer(text="이 사람은 함수 입니다.")
         await message.channel.send(embed=embed)
         
