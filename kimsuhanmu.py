@@ -106,7 +106,7 @@ async def on_message(message):
         
     if message.content.startswith("-김수한무 름표"):
         embed=discord.Embed(title="름표", description="이것은 름표의 프로필 입니다.", color=0x00ff56)
-        embed.set_author(name="름표", url="https://www.youtube.com/channel/UCjA53F_BR6Y8WRdE_Foh9rw?view_as=subscriber", icon_url="https://cdn.discordapp.com/attachments/716541654848503890/717336584084652120/unknown.png")
+        embed.set_author(name="름표", url="https://www.youtube.com/channel/UCjA53F_BR6Y8WRdE_Foh9rw?view_as=subscriber", icon_url="https://cdn.discordapp.com/avatars/538589529263702017/b16422e6472d561f6a70b04680e7d300.webp?size=128")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/717016146716655677/717218639417442385/94ff9a0cbc761033.png")
         embed.add_field(name="이름", value="름표", inline=True)
         embed.add_field(name="주로 하는 말", value="흠터레스팅", inline=True)
