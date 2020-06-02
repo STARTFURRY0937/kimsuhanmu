@@ -18,7 +18,7 @@ async def on_message(message):
         return None
     
     if message.content.startswith("-김수한무야"):
-        await message.channel.send("무슨일 이십니까?")
+        await message.channel.send("무슨 일 이십니까?")
 
     if message.content.startswith("-김수한무 도움말"):
         await message.channel.send("도움말을 열겠습니다.")
