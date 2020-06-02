@@ -12,6 +12,7 @@ async def on_ready():
     await client.change_presence(status=discord.Status.online, activity=game)
 
 @app.command(name="청소", pass_context=True)
+if message.content == "김수한무":
 async def _clear(ctx, *, amount=5):
     await ctx.channel.purge(limit=amount)
     await message.channel.purge(limit=1)
