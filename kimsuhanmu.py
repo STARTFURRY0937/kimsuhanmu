@@ -3,7 +3,7 @@ import openpyxl
 import os
 
 client = discord.Client()
-
+app = discord.Client()
 @client.event
 async def on_ready():
     print(client.user.id)
@@ -11,6 +11,10 @@ async def on_ready():
     game = discord.Game("-김수한무 도움말")
     await client.change_presence(status=discord.Status.online, activity=game)
 
+@app.command(name="청소", pass_context=True)
+async def _clear(ctx, *, amount=5):
+    await ctx.channel.purge(limit=amount)
+    await message.channel.send("{} 김수한무 봇에 의해 작동됨.".format(my_name.mention))
     
 @client.event
 async def on_message(message):
