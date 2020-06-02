@@ -27,18 +27,6 @@ async def on_message(message):
         await message.channel.send("극비 사항 입니다.")
         
         
-    
-    if message.content.startswith("-김수한무 도움말"):
-        embed=discord.Embed(title="Example Embed", description="이것은 도움말 목록입니다.", color=0x00ff56)
-        embed.set_author(name="제작자", url="https://www.youtube.com/channel/UClN0RrhhqXYLZlDDUNPH6Jg", icon_url="https://cdn.discordapp.com/attachments/717016146716655677/717218639417442385/94ff9a0cbc761033.png")
-        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/717016146716655677/717218639417442385/94ff9a0cbc761033.png")
-        embed.add_field(name="김수한무 게임", value="-김수한무 게임말", inline=True)
-        embed.add_field(name="김수한무 대화", value="-김수한무 대화말", inline=True)
-        embed.add_field(name="이것은 필드 3입니다.", value="필드의 값입니다.", inline=True)
-        embed.add_field(name="이것은 필드 4입니다.", value="필드의 값입니다.", inline=True)
-        embed.set_footer(text="이것은 푸터입니다.")
-        await message.channel.send(embed=embed)
-        
     if message.content.startswith("-김수한무 네르"):
         embed=discord.Embed(title=".뉄", description="이것은 네르의 프로필 입니다.", color=0x00ff56)
         embed.set_author(name="네르", url="https://www.youtube.com/channel/UCf8xaoq1X55ZGnJn7kKtHwA", icon_url="https://cdn.discordapp.com/attachments/692941163920883732/717282429538140211/JPEG_20200103_190316.jpg")
@@ -120,8 +108,8 @@ async def on_message(message):
         embed=discord.Embed(title="름표", description="이것은 름표의 프로필 입니다.", color=0x00ff56)
         embed.set_author(name="름표", url="https://www.youtube.com/channel/UCjA53F_BR6Y8WRdE_Foh9rw?view_as=subscriber", icon_url="https://cdn.discordapp.com/attachments/716541654848503890/717336584084652120/unknown.png")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/717016146716655677/717218639417442385/94ff9a0cbc761033.png")
-        embed.add_field(name="이름", value="??", inline=True)
-        embed.add_field(name="주로 하는 말", value="?", inline=True)
+        embed.add_field(name="이름", value="름표", inline=True)
+        embed.add_field(name="주로 하는 말", value="흠터레스팅", inline=True)
         embed.add_field(name="특징", value="3학년 잼민이", inline=True)
         embed.add_field(name="한마디.", value="내일 개학", inline=True)
         embed.set_footer(text="이 사람은 름표 입니다.")
