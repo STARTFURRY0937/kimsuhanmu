@@ -22,6 +22,9 @@ async def on_message(message):
 
     if message.content.startswith("-김수한무 도움말"):
         await message.channel.send("도움말을 열겠습니다.")
+        
+    if message.content.startswith("-김수한무 ㅋㅋㅋ"):
+        await message.channel.send("하하하하하 :)")
 
     if message.content.startswith(""):
         file = openpyxl.load_workbook("레벨.xlsx")
