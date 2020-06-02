@@ -10,14 +10,6 @@ async def on_ready():
     print("ready")
     game = discord.Game("-김수한무 도움말")
     await client.change_presence(status=discord.Status.online, activity=game)
-
-@app.command(name="청소", pass_context=True)
-if message.content == "김수한무":
-async def _clear(ctx, *, amount=5):
-    await ctx.channel.purge(limit=amount)
-    await message.channel.purge(limit=1)
-    my_name = discord.utils.get(message.guild.members, name="?")
-    await message.channel.send("{} 김수한무 봇에 의해 출력됨.".format(my_name.mention))
     
 @client.event
 async def on_message(message):
