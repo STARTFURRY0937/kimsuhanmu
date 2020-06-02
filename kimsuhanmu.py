@@ -14,7 +14,9 @@ async def on_ready():
 @app.command(name="청소", pass_context=True)
 async def _clear(ctx, *, amount=5):
     await ctx.channel.purge(limit=amount)
-    await message.channel.send("{} 김수한무 봇에 의해 작동됨.".format(my_name.mention))
+    await message.channel.purge(limit=1)
+    my_name = discord.utils.get(message.guild.members, name="?")
+    await message.channel.send("{} 김수한무 봇에 의해 출력됨.".format(my_name.mention))
     
 @client.event
 async def on_message(message):
