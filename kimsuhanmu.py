@@ -115,32 +115,12 @@ async def on_message(message):
         embed.set_footer(text="이 사람은 름표 입니다.")
         await message.channel.send(embed=embed)
         
-       
     if message.content.startswith("ㅋㅋㅋ"):
         await message.channel.send("하하하하하 :)")
 
-    if message.content.startswith(""):
-        file = openpyxl.load_workbook("레벨.xlsx")
-        sheet = file.active
-        exp = [50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000]
-        i = 1
-        while True:
-            if sheet["A" + str(i)].value == str(message.author.id):
-                sheet["B" + str(i)].value = sheet["B" + str(i)].value + 2
-                if sheet["B" + str(i)].value >= exp[sheet["C" + str(i)].value - 1]:
-                    sheet["C" + str(i)].value = sheet["C" + str(i)].value + 1
-                    await message.channel.send("레벨이 올랐습니다.\n현재 레벨 "  + str(sheet["C" + str(i)].value) + "\n경험치 : " + str(sheet["B" + str(i)].value))
-                file.save("레벨.xlsx")
-                break
-
-            if sheet["A" + str(i)].value == None:
-                sheet["A" + str(i)].value = str(message.author.id)
-                sheet["B" + str(i)].value = 0
-                sheet["C" + str(i)].value = 1
-                file.save("레벨.xlsx")
-                break
-
-            i += 1
+@client.command(name="청소", pass_context=True)
+async def _clear(ctx, *, amount=5):
+    await ctx.channel.purge(limit=amount)
 
 access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)
