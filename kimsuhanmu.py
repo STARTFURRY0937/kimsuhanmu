@@ -118,9 +118,18 @@ async def on_message(message):
     if message.content.startswith("ㅋㅋㅋ"):
         await message.channel.send("하하하하하 :)")
 
-@client.command(name="청소", pass_context=True)
-async def _clear(ctx, *, amount=5):
-    await ctx.channel.purge(limit=amount)
-
+@client.command(name="-김수한무 언뮤트", pass_context=True)
+async def _unmute(ctx, member: discord.Member=None):
+    member = member or ctx.message.author
+    await member.add_roles(get(ctx.guild.roles, name="일반 깃털"))
+    await member.remove_roles(get(ctx.guild.roles, name='시체'))
+    await ctx.send(str(member)+"의 입을 풀었습니다.")
+    
+@client.command(name="-김수한무 뮤트", pass_context=True)
+async def _mute(ctx, member: discord.Member=None):
+    member = member or ctx.message.author
+    await member.add_roles(get(ctx.guild.roles, name="시체"))
+    await ctx.send(str(member)+"의 입을 막았습니다.")
+        
 access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)
