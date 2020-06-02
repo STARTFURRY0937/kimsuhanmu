@@ -8,10 +8,8 @@ client = discord.Client()
 async def on_ready():
     print(client.user.id)
     print("ready")
-    game = discord.Game("김수한무 실행중..")
+    game = discord.Game("-김수한무 도움말")
     await app.change_presence(status=discord.Status.online, activity=game)
-    await message.channel.send("안녕하세요.")
-
 
     
 @client.event
