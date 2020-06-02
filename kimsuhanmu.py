@@ -20,7 +20,7 @@ async def on_message(message):
     if message.content.startswith("-김수한무야"):
         await message.channel.send("무슨 일 이십니까?")
 
-if message.content.startswith("-김수한무 도움말"):
+    if message.content.startswith("-김수한무 도움말"):
         embed=discord.Embed(title="Example Embed", description="이것은 Embed입니다.", color=0x00ff56)
         embed.set_author(name="저자의 이름", url="https://blog.naver.com/huntingbear21", icon_url="https://cdn.discordapp.com/attachments/717016146716655677/717218639417442385/94ff9a0cbc761033.png")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/717016146716655677/717218639417442385/94ff9a0cbc761033.png")
