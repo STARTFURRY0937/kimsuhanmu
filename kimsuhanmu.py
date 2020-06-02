@@ -21,11 +21,11 @@ async def on_message(message):
         await message.channel.send("무슨 일 이십니까?")
 
     if message.content.startswith("-김수한무 도움말"):
-        embed=discord.Embed(title="Example Embed", description="이것은 Embed입니다.", color=0x00ff56)
-        embed.set_author(name="저자의 이름", url="https://www.youtube.com/channel/UClN0RrhhqXYLZlDDUNPH6Jg", icon_url="https://cdn.discordapp.com/attachments/717016146716655677/717218639417442385/94ff9a0cbc761033.png")
+        embed=discord.Embed(title="Example Embed", description="이것은 도움말 목록입니다.", color=0x00ff56)
+        embed.set_author(name="칠색조 유튜브", url="https://www.youtube.com/channel/UClN0RrhhqXYLZlDDUNPH6Jg", icon_url="https://cdn.discordapp.com/attachments/717016146716655677/717218639417442385/94ff9a0cbc761033.png")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/717016146716655677/717218639417442385/94ff9a0cbc761033.png")
-        embed.add_field(name="이것은 필드입니다.", value="필드의 값입니다.", inline=True)
-        embed.add_field(name="이것은 필드 2입니다.", value="필드의 값입니다.", inline=True)
+        embed.add_field(name="김수한무 게임", value="-김수한무 게임말", inline=True)
+        embed.add_field(name="김수한무 대화", value="-김수한무 대화말", inline=True)
         embed.add_field(name="이것은 필드 3입니다.", value="필드의 값입니다.", inline=True)
         embed.add_field(name="이것은 필드 4입니다.", value="필드의 값입니다.", inline=True)
         embed.set_footer(text="이것은 푸터입니다.")
