@@ -110,8 +110,8 @@ async def on_message(message):
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/717016146716655677/717218639417442385/94ff9a0cbc761033.png")
         embed.add_field(name="이름", value="름표", inline=True)
         embed.add_field(name="주로 하는 말", value="흠터레스팅", inline=True)
-        embed.add_field(name="특징", value="3학년 잼민이", inline=True)
-        embed.add_field(name="한마디.", value="내일 개학", inline=True)
+        embed.add_field(name="특징", value="와 샌즈", inline=True)
+        embed.add_field(name="한마디.", value="오늘 개학", inline=True)
         embed.set_footer(text="이 사람은 름표 입니다.")
         await message.channel.send(embed=embed)
         
