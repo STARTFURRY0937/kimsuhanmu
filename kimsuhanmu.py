@@ -20,10 +20,10 @@ async def on_message(message):
     if message.content.startswith("-김수한무야"):
         await message.channel.send("무슨 일 이십니까?")
     
-    if message.content.startswith("_김수한무 바루호"):
+    if message.content.startswith("-김수한무 바루호"):
         await message.channel.send("극비 사항 입니다.")
         
-    if message.content.startswith("_김수한무 콩밤돌이"):
+    if message.content.startswith("-김수한무 콩밤돌이"):
         await message.channel.send("극비 사항 입니다.")
         
         
