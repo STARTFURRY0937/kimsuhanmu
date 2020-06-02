@@ -53,6 +53,18 @@ async def on_message(message):
         embed.set_footer(text="이 사람은 하양 입니다.")
         await message.channel.send(embed=embed)
         
+            if message.content.startswith("-김수한무 칠색조"):
+        embed=discord.Embed(title="칠색조", description="이것은 칠색조의 프로필 입니다.", color=0x00ff56)
+        embed.set_author(name="칠색조", url="https://www.youtube.com/channel/UClN0RrhhqXYLZlDDUNPH6Jg", icon_url="https://cdn.discordapp.com/attachments/714372925972545556/717289566574477373/unnamed.jpg")
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/717016146716655677/717218639417442385/94ff9a0cbc761033.png")
+        embed.add_field(name="이름", value="칠색조", inline=True)
+        embed.add_field(name="주로 하는 말", value="ㅅ발", inline=True)
+        embed.add_field(name="좋아하는 게임", value="테라리아", inline=True)
+        embed.add_field(name="한마디.", value="ㄱㅊ나의영역임", inline=True)
+        embed.set_footer(text="이 사람은 칠색조 입니다.")
+        await message.channel.send(embed=embed)
+        
+        
     if message.content.startswith("ㅋㅋㅋ"):
         await message.channel.send("하하하하하 :)")
 
