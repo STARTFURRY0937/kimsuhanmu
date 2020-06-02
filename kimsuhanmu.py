@@ -19,7 +19,15 @@ async def on_message(message):
     
     if message.content.startswith("-김수한무야"):
         await message.channel.send("무슨 일 이십니까?")
-
+    
+    if message.content.startswith("_김수한무 바루호"):
+        await message.channel.send("극비 사항 입니다.")
+        
+    if message.content.startswith("_김수한무 콩밤돌이"):
+        await message.channel.send("극비 사항 입니다.")
+        
+        
+    
     if message.content.startswith("-김수한무 도움말"):
         embed=discord.Embed(title="Example Embed", description="이것은 도움말 목록입니다.", color=0x00ff56)
         embed.set_author(name="제작자", url="https://www.youtube.com/channel/UClN0RrhhqXYLZlDDUNPH6Jg", icon_url="https://cdn.discordapp.com/attachments/717016146716655677/717218639417442385/94ff9a0cbc761033.png")
@@ -99,7 +107,7 @@ async def on_message(message):
         
     if message.content.startswith("-김수한무 ??"):
         embed=discord.Embed(title="??", description="이것은 ??의 프로필 입니다.", color=0x00ff56)
-        embed.set_author(name="??", url="https://www.youtube.com/channel/UCjA53F_BR6Y8WRdE_Foh9rw?view_as=subscriber", icon_url="https://cdn.discordapp.com/attachments/716541654848503890/717335317828599888/KakaoTalk_20200401_204511495_01.jpg")
+        embed.set_author(name="??", url="https://www.youtube.com/channel/UCjA53F_BR6Y8WRdE_Foh9rw?view_as=subscriber", icon_url="https://cdn.discordapp.com/attachments/716541654848503890/717336584084652120/unknown.png")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/717016146716655677/717218639417442385/94ff9a0cbc761033.png")
         embed.add_field(name="이름", value="??", inline=True)
         embed.add_field(name="주로 하는 말", value="?", inline=True)
