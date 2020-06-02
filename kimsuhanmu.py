@@ -8,11 +8,14 @@ client = discord.Client()
 async def on_ready():
     print(client.user.id)
     print("ready")
-    await app.change_presence(game=discord.Game(name="안녕하세요 :)", type=1))
+    await client.change_presence(game=discord.Game(name="안녕하세요 :)", type=1))
     await client.change_presence(status=discord.Status.online)
 
 @client.event
 async def on_message(message):
+    if message.author.bot:
+        return None
+    
     if message.content.startswith("-김수한무야"):
         await message.channel.send("무슨일 이십니까?")
 
