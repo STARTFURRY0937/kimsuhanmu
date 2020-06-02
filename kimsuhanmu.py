@@ -100,7 +100,7 @@ async def on_message(message):
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/717016146716655677/717218639417442385/94ff9a0cbc761033.png")
         embed.add_field(name="이름", value="함수", inline=True)
         embed.add_field(name="주로 하는 말", value="?", inline=True)
-        embed.add_field(name="좋아하는 게임", value="테라리아", inline=True)
+        embed.add_field(name="좋아하는 게임", value="컴은 테라리아만 하는 함수", inline=True)
         embed.add_field(name="한마디.", value="약 필요하면 말하셈", inline=True)
         embed.set_footer(text="이 사람은 함수 입니다.")
         await message.channel.send(embed=embed)
@@ -114,6 +114,17 @@ async def on_message(message):
         embed.add_field(name="좋아하는 게임", value="텔", inline=True)
         embed.add_field(name="한마디.", value="함변수태", inline=True)
         embed.set_footer(text="이 사람은 ?? 입니다.")
+        await message.channel.send(embed=embed)
+        
+    if message.content.startswith("-김수한무 름표"):
+        embed=discord.Embed(title="??", description="이것은 름표의 프로필 입니다.", color=0x00ff56)
+        embed.set_author(name="??", url="https://www.youtube.com/channel/UCjA53F_BR6Y8WRdE_Foh9rw?view_as=subscriber", icon_url="https://cdn.discordapp.com/attachments/716541654848503890/717336584084652120/unknown.png")
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/717016146716655677/717218639417442385/94ff9a0cbc761033.png")
+        embed.add_field(name="이름", value="??", inline=True)
+        embed.add_field(name="주로 하는 말", value="?", inline=True)
+        embed.add_field(name="특징", value="3학년 잼민이", inline=True)
+        embed.add_field(name="한마디.", value="내일 개학", inline=True)
+        embed.set_footer(text="이 사람은 름표 입니다.")
         await message.channel.send(embed=embed)
         
        
