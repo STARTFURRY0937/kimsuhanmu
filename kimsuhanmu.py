@@ -32,8 +32,8 @@ async def on_message(message):
         await message.channel.send(embed=embed)
         
     if message.content.startswith("-김수한무 네르"):
-        embed=discord.Embed(title="네르", description="이것은 네르의 프로필 입니다.", color=0x00ff56)
-        embed.set_author(name="네르", url="https://www.youtube.com/channel/UClN0RrhhqXYLZlDDUNPH6Jg", icon_url="https://cdn.discordapp.com/attachments/692941163920883732/717282429538140211/JPEG_20200103_190316.jpg")
+        embed=discord.Embed(title="네르유튜브", description="이것은 네르의 프로필 입니다.", color=0x00ff56)
+        embed.set_author(name="네르", url="https://www.youtube.com/channel/UCf8xaoq1X55ZGnJn7kKtHwA", icon_url="https://cdn.discordapp.com/attachments/692941163920883732/717282429538140211/JPEG_20200103_190316.jpg")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/717016146716655677/717218639417442385/94ff9a0cbc761033.png")
         embed.add_field(name="이름", value="네르", inline=True)
         embed.add_field(name="주로 하는 말", value="ppap", inline=True)
