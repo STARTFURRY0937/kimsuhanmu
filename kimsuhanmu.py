@@ -1,6 +1,7 @@
 import discord
 import openpyxl
 import os
+import datetime
 
 client = discord.Client()
 app = discord.Client()
@@ -15,6 +16,16 @@ async def on_ready():
 async def on_message(message):
     if message.author.bot:
         return None
+    
+    if message.content.startswith("-김수한무 내 정보"):
+        date = datetime.datetime.utcfromtimestamp(((int(message.author.id) >> 22) + 1420070400000) / 1000)
+        embed = discord.Embed(color=0x00ff00)
+        embed.add_field(name="이름", value=message.author.name, inline=True)
+        embed.add_field(name="서버닉네임", value=message.author.display_name, inline=True)
+        embed.add_field(name="가입날짜", value=str(date.year) + "년" + str(date.month) + "월" + str(date.day) + "일", inline=True)
+        embed.add_field(name="아이디", value=message.author.id, inline=True)
+        embed.set_thumbnail(url=message.author.avatar_url)
+        await client.send_message(message.channel, embed=embed)
     
     if message.content.startswith("-김수한무야"):
         await message.channel.send("무슨 일 이십니까?")
@@ -116,6 +127,9 @@ async def on_message(message):
         
     if message.content.startswith("ㅋㅋㅋ"):
         await message.channel.send("하하하하하 :)")
+        
+    if message.content.startswith("ㄷ"):
+        await message.channel.send("후 덜덜덜...")
 
 access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)
