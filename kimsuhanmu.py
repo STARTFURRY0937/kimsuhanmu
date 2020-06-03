@@ -25,7 +25,7 @@ async def on_message(message):
         embed.add_field(name="가입날짜", value=str(date.year) + "년" + str(date.month) + "월" + str(date.day) + "일", inline=True)
         embed.add_field(name="아이디", value=message.author.id, inline=True)
         embed.set_thumbnail(url=message.author.avatar_url)
-        await client.send_message(message.channel, embed=embed)
+        await message.channel.send(embed=embed)
     
     if message.content.startswith("-김수한무야"):
         await message.channel.send("무슨 일 이십니까?")
