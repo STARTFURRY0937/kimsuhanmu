@@ -36,6 +36,12 @@ async def on_message(message):
     if message.content.startswith("-김수한무 콩밤돌이"):
         await message.channel.send("극비 사항 입니다.")
         
+    if message.content.startswith("엄준식"):
+        await message.channel.send("엄준복")
+        
+    if message.content.startswith("엄준복"):
+        await message.channel.send("엄준식")
+        
         
     if message.content.startswith("-김수한무 네르"):
         embed=discord.Embed(title=".뉄", description="이것은 네르의 프로필 입니다.", color=0x00ff56)
