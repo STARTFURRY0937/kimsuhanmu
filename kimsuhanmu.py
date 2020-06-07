@@ -42,6 +42,32 @@ async def on_message(message):
     if message.content.startswith("엄준복"):
         await message.channel.send("엄준식")
         
+    if message.content.startswith("음"):
+        await message.channel.send("흠")
+        
+    if message.content.startswith("흠"):
+        await message.channel.send("터레스팅")
+        
+    if message.content.startswith("함수"):
+        await message.channel.send("변함태수")
+        
+    if message.content.startswith("ㅘ"):
+        await message.channel.send("샌즈!")
+        
+    if message.content.startswith("와"):
+        await message.channel.send("샌즈!")
+        
+    if message.content.startswith("칠색조"):
+        await message.channel.send("대빵 미만 잡부")
+        
+    if message.content.startswith("두둥등장"):
+        await message.channel.send("또로로록 갤럭시")
+        
+    if message.content.startswith("ㄷㄷ등장"):
+        await message.channel.send("또로로록 갤럭시")
+        
+    if message.content.startswith("ppap"):
+        await message.channel.send("p:펜 p:파인애플 a:애플 p:펜")
         
     if message.content.startswith("-김수한무 네르"):
         embed=discord.Embed(title=".뉄", description="이것은 네르의 프로필 입니다.", color=0x00ff56)
