@@ -160,7 +160,7 @@ async def on_message(message):
     if message.content.startswith("ㅋㅋㅋ"):
         await message.channel.send("하하하하하 :)")
         
-    if message.content.startswith("ㄷ"):
+    if message.content.startswith("ㅎㄷㄷ"):
         await message.channel.send("후 덜덜덜...")
 
 access_token = os.environ["BOT_TOKEN"]
